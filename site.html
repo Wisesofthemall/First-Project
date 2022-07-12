@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fill-out-Form</title>
+</head>
+
+<body>
+    <h1>Hello, Form!</h1>
+</body>
+<form action="/form-handling-url" method="post">
+    <fieldset>
+        <legend>Add user</legend>
+        <div>
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="first_name">
+        </div>
+        <div>
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName" name="last_name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email_address">
+        </div>
+        <div>
+            <label for="role">Role</label>
+            <select id="role" name="user_role_name">
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+                <option value="guest">Guest</option>
+            </select>
+        </div>
+        <div>
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="bio"></textarea>
+        </div>
+        <div>
+            <button type="submit">Add this person</button>
+        </div>
+    </fieldset>
+</form>
+<div class="card" width="344px">
+    <img src=".\images\desert.jpg" alt="desert" height="194px" width="344px">
+    <div class="profile">
+      <div class="top">
+        <img class="avatar" src=".\images\person-avatar.jpg" alt="profile picture" width="40px">
+        <h1 class="title">Title goes here</h1>
+      </div>
+      <div class="outer">
+        <div class="inner">
+          <p class="secondary-text">Secondary text</p>
+        </div>
+      </div>
+      <p class="body-text">Greyhound divisively hello coldly wonderfully marginally far upon excluding</p>
+    </div>
+  </div>
+
+</html>
