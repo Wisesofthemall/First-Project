@@ -3,58 +3,61 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Fill-out-Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App Academy HTML/CSS Assessment</title>
+    <link href="site.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Hello, Form!</h1>
-</body>
-<form action="/form-handling-url" method="post">
-    <fieldset>
-        <legend>Add user</legend>
-        <div>
-            <label for="firstName">First name</label>
-            <input type="text" id="firstName" name="first_name">
+    <!-- Your markup goes here. -->
+    <form action="/pets" method="post">
+        <fieldset>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="pet_name">
+            </div>
+            <div>
+                <label for="type">Type</label>
+                <select for="pet_type" id="type">
+                    <option value="cat">Cat</option>
+                    <option value="dog">Dog</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="other">Other</option>
+                    <option value="zebra">Zebra</option>
+                </select>
+            </div>
+            <div>
+                <label for="bio">Biography</label>
+                <textarea id="bio" name="pet_bio"></textarea>
+            </div>
+            <div>
+                <label for="email">Owner's Email</label>
+                <input type="email" id="owner-email" name="pet_owner_email">
+            </div>
+            <div>
+                <button type="submit" id="new-pet-submit-button">Create new pet</button>
+            </div>
+            <div>
+                <button type="reset">Reset</button>
+            </div>
+        </fieldset>
+    </form>
+    <div class="card" width="344px">
+        <img src=".\images\desert.jpg" alt="desert" height="194px" width="344px">
+        <div class="profile">
+            <div class="top">
+                <img class="avatar" src=".\images\person-avatar.jpg" alt="profile picture" width="40px">
+                <h1 class="title">Title goes here</h1>
+            </div>
+            <div class="outer">
+                <div class="inner"></div>
+                <p class="secondary-text">Secondary text</p>
+            </div>
         </div>
-        <div>
-            <label for="lastName">Last name</label>
-            <input type="text" id="lastName" name="last_name">
-        </div>
-        <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email_address">
-        </div>
-        <div>
-            <label for="role">Role</label>
-            <select id="role" name="user_role_name">
-                <option value="admin">Admin</option>
-                <option value="user">User</option>
-                <option value="guest">Guest</option>
-            </select>
-        </div>
-        <div>
-            <label for="bio">Bio</label>
-            <textarea id="bio" name="bio"></textarea>
-        </div>
-        <div>
-            <button type="submit">Add this person</button>
-        </div>
-    </fieldset>
-</form>
-<div class="card" width="344px">
-    <img src=".\images\desert.jpg" alt="desert" height="194px" width="344px">
-    <div class="profile">
-      <div class="top">
-        <img class="avatar" src=".\images\person-avatar.jpg" alt="profile picture" width="40px">
-        <h1 class="title">Title goes here</h1>
-      </div>
-      <div class="outer">
-        <div class="inner">
-          <p class="secondary-text">Secondary text</p>
-        </div>
-      </div>
-      <p class="body-text">Greyhound divisively hello coldly wonderfully marginally far upon excluding</p>
+        <p class="body-text">Greyhound divisively hello coldly wonderfully marginally far upon excluding</p>
     </div>
-  </div>
+    </div>
+</body>
 
 </html>
